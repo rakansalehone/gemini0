@@ -1,11 +1,10 @@
 #get key api from https://aistudio.google.com/app/apikey
 #pip install google-generativeai
-import os
 import google.generativeai as genai
 
 
 def ask_gemini(qu):
-  genai.configure(api_key=os.environ["your_key_api"])
+  genai.configure(api_key="your_key_api")
 
   # Create the model
   # See https://ai.google.dev/api/python/google/generativeai/GenerativeModel
